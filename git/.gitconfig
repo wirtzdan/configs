@@ -1,2 +1,5 @@
 [core]
 	excludesfile = /Users/wirtzdan/.gitignore_global
+[user]
+	name = wirtzdan
+	email = daniel@danielwirtz.com
