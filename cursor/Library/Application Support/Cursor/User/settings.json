@@ -68,5 +68,5 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "workbench.preferredHighContrastLightColorTheme": "GitHub Light",
-  "workbench.iconTheme": "material-icon-theme"
+  "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-auto"
 }
