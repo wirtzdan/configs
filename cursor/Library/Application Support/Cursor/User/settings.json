@@ -1,0 +1,72 @@
+{
+  "editor.fontFamily": "'Monaspace Neon', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 16,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.guides.indentation": false,
+  "editor.accessibilitySupport": "off",
+  "workbench.preferredDarkColorTheme": "GitHub Dark Dimmed",
+  "workbench.preferredLightColorTheme": "GitHub Light",
+  "workbench.sideBar.location": "right",
+  "window.autoDetectColorScheme": true,
+  // Indention guideline styling
+  "indentRainbow.includedLanguages": [],
+  "indentRainbow.indicatorStyle": "light",
+  "indentRainbow.lightIndicatorStyleLineWidth": 2,
+  "indentRainbow.colors": [
+    "rgba(124, 127, 147, 0.2)",
+    "rgba(124, 127, 147, 0.15)",
+    "rgba(124, 127, 147, 0.10)",
+    "rgba(124, 127, 147, 0.075)",
+    "rgba(124, 127, 147, 0.05)",
+    "rgba(124, 127, 147, 0.04)",
+    "rgba(124, 127, 147, 0.03)",
+    "rgba(124, 127, 147, 0.025)",
+    "rgba(124, 127, 147, 0.01)"
+  ],
+  "indentRainbow.errorColor": "rgba(128,32,32,0.6)",
+  "indentRainbow.tabmixColor": "rgba(128,32,96,0.6)",
+  "indenticator.color.dark": "rgba(124, 127, 147, 0.3)",
+  "indenticator.color.light": "rgba(124, 127, 147, 0.3)",
+  "indenticator.width": 1,
+  "indenticator.style": "solid",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "explorer.sortOrder": "type",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.colorTheme": "Github Light Theme",
+  "git.openRepositoryInParentFolders": "always",
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+  "vsicons.dontShowNewVersionMessage": true,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "diffEditor.renderSideBySide": false,
+  "turboConsoleLog.logMessagePrefix": "",
+  "turboConsoleLog.delimiterInsideMessage": ">",
+  "turboConsoleLog.logMessageSuffix": " — ",
+  "git.confirmSync": false,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.preferredHighContrastLightColorTheme": "GitHub Light",
+  "workbench.iconTheme": "material-icon-theme"
+}
