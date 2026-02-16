@@ -3,13 +3,13 @@
   "editor.fontLigatures": true,
   "editor.fontSize": 16,
   "editor.formatOnSave": true,
-  "editor.formatOnType": true,
   "editor.guides.indentation": false,
   "editor.accessibilitySupport": "off",
   "workbench.preferredDarkColorTheme": "GitHub Dark Dimmed",
   "workbench.preferredLightColorTheme": "GitHub Light",
   "workbench.sideBar.location": "right",
   "window.autoDetectColorScheme": true,
+  "git.openDiffOnClick": false,
   // Indention guideline styling
   "indentRainbow.includedLanguages": [],
   "indentRainbow.indicatorStyle": "light",
@@ -23,7 +23,7 @@
     "rgba(124, 127, 147, 0.04)",
     "rgba(124, 127, 147, 0.03)",
     "rgba(124, 127, 147, 0.025)",
-    "rgba(124, 127, 147, 0.01)"
+    "rgba(124, 127, 147, 0.01)",
   ],
   "indentRainbow.errorColor": "rgba(128,32,32,0.6)",
   "indentRainbow.tabmixColor": "rgba(128,32,96,0.6)",
@@ -32,19 +32,19 @@
   "indenticator.width": 1,
   "indenticator.style": "solid",
   "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "explorer.sortOrder": "type",
   "[typescriptreact]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "vscode.typescript-language-features",
   },
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "workbench.colorTheme": "Github Light Theme",
   "git.openRepositoryInParentFolders": "always",
@@ -54,10 +54,10 @@
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
   "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "diffEditor.renderSideBySide": false,
   "turboConsoleLog.logMessagePrefix": "",
@@ -65,8 +65,139 @@
   "turboConsoleLog.logMessageSuffix": " — ",
   "git.confirmSync": false,
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "workbench.preferredHighContrastLightColorTheme": "GitHub Light",
-  "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-auto"
+  "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-auto",
+  "editor.defaultFormatter": "biomejs.biome",
+  "cursor.composer.shouldChimeAfterChatFinishes": true,
+  "vscode_custom_css.imports": [
+    "https://raw.githubusercontent.com/yoavbls/pretty-ts-errors/refs/heads/main/docs/pretty-ts-errors-hack.css",
+  ],
+  "diffEditor.ignoreTrimWhitespace": false,
+  "git.blame.editorDecoration.enabled": true,
+  "javascript.preferences.importModuleSpecifier": "relative",
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "cursor.composer.shouldAllowCustomModes": true,
+  "cursor.terminal.usePreviewBox": true,
+  "files.autoSave": "onFocusChange",
+  "accessibility.signals.lineHasBreakpoint": {
+    "sound": "off",
+    "announcement": "auto",
+  },
+  "accessibility.signals.chatEditModifiedFile": {
+    "sound": "off",
+  },
+  "accessibility.signals.chatRequestSent": {
+    "sound": "off",
+    "announcement": "auto",
+  },
+  "accessibility.signals.chatResponseReceived": {
+    "sound": "off",
+  },
+  "accessibility.signals.clear": {
+    "sound": "off",
+    "announcement": "auto",
+  },
+  "accessibility.signals.codeActionApplied": {
+    "sound": "off",
+  },
+  "accessibility.signals.codeActionTriggered": {
+    "sound": "off",
+  },
+  "accessibility.signals.onDebugBreak": {
+    "sound": "off",
+    "announcement": "auto",
+  },
+  "accessibility.signals.diffLineDeleted": {
+    "sound": "off",
+  },
+  "accessibility.signals.diffLineInserted": {
+    "sound": "off",
+  },
+  "accessibility.signals.diffLineModified": {
+    "sound": "off",
+  },
+  "accessibility.signals.editsKept": {
+    "sound": "off",
+    "announcement": "auto",
+  },
+  "accessibility.signals.positionHasError": {
+    "sound": "off",
+    "announcement": "auto",
+  },
+  "accessibility.signals.lineHasError": {
+    "sound": "off",
+    "announcement": "auto",
+  },
+  "accessibility.signals.lineHasFoldedArea": {
+    "sound": "off",
+    "announcement": "auto",
+  },
+  "accessibility.signals.lineHasInlineSuggestion": {
+    "sound": "off",
+  },
+  "accessibility.signals.noInlayHints": {
+    "sound": "off",
+    "announcement": "auto",
+  },
+  "accessibility.signals.notebookCellCompleted": {
+    "sound": "off",
+    "announcement": "auto",
+  },
+  "accessibility.signals.notebookCellFailed": {
+    "sound": "off",
+    "announcement": "auto",
+  },
+  "accessibility.signals.progress": {
+    "sound": "off",
+    "announcement": "auto",
+  },
+  "accessibility.signals.taskCompleted": {
+    "sound": "off",
+    "announcement": "auto",
+  },
+  "accessibility.signals.taskFailed": {
+    "sound": "off",
+    "announcement": "auto",
+  },
+  "accessibility.signals.terminalBell": {
+    "sound": "off",
+    "announcement": "auto",
+  },
+  "accessibility.signals.terminalCommandFailed": {
+    "sound": "off",
+    "announcement": "auto",
+  },
+  "accessibility.signals.terminalCommandSucceeded": {
+    "sound": "off",
+    "announcement": "auto",
+  },
+  "accessibility.signals.terminalQuickFix": {
+    "sound": "off",
+    "announcement": "auto",
+  },
+  "accessibility.signals.editsUndone": {
+    "sound": "off",
+    "announcement": "auto",
+  },
+  "accessibility.signals.voiceRecordingStarted": {
+    "sound": "off",
+  },
+  "accessibility.signals.voiceRecordingStopped": {
+    "sound": "off",
+  },
+  "accessibility.signals.positionHasWarning": {
+    "sound": "off",
+    "announcement": "auto",
+  },
+  "accessibility.signals.lineHasWarning": {
+    "sound": "off",
+    "announcement": "auto",
+  },
+  "editor.formatOnPaste": true,
+  "cursor.composer.queueMessageDefaultBehavior": "stop-and-send",
+  "cursor.composer.usageSummaryDisplay": "always",
+  "update.releaseTrack": "dev",
+  "update.mode": "silentlyApplyOnQuit",
 }

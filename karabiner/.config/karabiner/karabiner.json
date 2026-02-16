@@ -4,7 +4,38 @@
       "complex_modifications": {
         "rules": [
           {
-            "description": "Hyper Key (⌃⌥⇧⌘)",
+            "description": "Accent/Tilde → ⇧⌃⌘",
+            "manipulators": [
+              {
+                "from": { "key_code": "non_us_backslash" },
+                "to": [
+                  {
+                    "key_code": "left_shift",
+                    "modifiers": ["left_control", "left_command"]
+                  }
+                ],
+                "to_if_alone": [{ "key_code": "non_us_backslash" }],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "FN/Globe → ⌃⌥⌘",
+            "manipulators": [
+              {
+                "from": { "key_code": "fn" },
+                "to": [
+                  {
+                    "key_code": "left_control",
+                    "modifiers": ["left_option", "left_command"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Caps lock → ⇧⌃⌥⌘",
             "manipulators": [
               {
                 "description": "Caps Lock -> Hyper Key",
@@ -24,7 +55,7 @@
             ]
           },
           {
-            "description": "Tab -> ⌥⌘",
+            "description": "Tab → ⌥⌘",
             "manipulators": [
               {
                 "description": "Tab -> ⌥⌘",
@@ -44,7 +75,65 @@
       },
       "name": "Default profile",
       "selected": true,
-      "virtual_hid_keyboard": { "keyboard_type_v2": "ansi" }
+      "virtual_hid_keyboard": { "keyboard_type_v2": "ansi" },
+      "conditions": [
+        {
+          "type": "frontmost_application_unless",
+          "description": "Switch to Gaming profile for Steam and games",
+          "bundle_identifiers": [
+            "^com.valvesoftware.steam$",
+            "^com.valvesoftware.steam.helper$",
+            "^com.valvesoftware.steam.helper.EH$",
+            "^com.valvesoftware.steam.helper.Renderer$",
+            "^com.valvesoftware.steam.helper.WebHelper$",
+            "^com.valvesoftware.steam.helper.GameOverlayUI$",
+            "^com.valvesoftware.steam.helper.GameOverlayRenderer$",
+            "^com.valvesoftware.steam.helper.GameOverlayRenderer.1$",
+            "^com.valvesoftware.steam.helper.GameOverlayRenderer.2$",
+            "^com.valvesoftware.steam.helper.GameOverlayRenderer.3$",
+            "^com.valvesoftware.steam.helper.GameOverlayRenderer.4$",
+            "^com.valvesoftware.steam.helper.GameOverlayRenderer.5$",
+            "^com.valvesoftware.steam.helper.GameOverlayRenderer.6$",
+            "^com.valvesoftware.steam.helper.GameOverlayRenderer.7$",
+            "^com.valvesoftware.steam.helper.GameOverlayRenderer.8$",
+            "^com.valvesoftware.steam.helper.GameOverlayRenderer.9$",
+            "^com.valvesoftware.steam.helper.GameOverlayRenderer.10$"
+          ]
+        }
+      ]
+    },
+    {
+      "complex_modifications": {
+        "rules": []
+      },
+      "name": "Gaming",
+      "selected": false,
+      "virtual_hid_keyboard": { "keyboard_type_v2": "ansi" },
+      "conditions": [
+        {
+          "type": "frontmost_application_if",
+          "description": "Switch to Gaming profile for Steam and games",
+          "bundle_identifiers": [
+            "^com.valvesoftware.steam$",
+            "^com.valvesoftware.steam.helper$",
+            "^com.valvesoftware.steam.helper.EH$",
+            "^com.valvesoftware.steam.helper.Renderer$",
+            "^com.valvesoftware.steam.helper.WebHelper$",
+            "^com.valvesoftware.steam.helper.GameOverlayUI$",
+            "^com.valvesoftware.steam.helper.GameOverlayRenderer$",
+            "^com.valvesoftware.steam.helper.GameOverlayRenderer.1$",
+            "^com.valvesoftware.steam.helper.GameOverlayRenderer.2$",
+            "^com.valvesoftware.steam.helper.GameOverlayRenderer.3$",
+            "^com.valvesoftware.steam.helper.GameOverlayRenderer.4$",
+            "^com.valvesoftware.steam.helper.GameOverlayRenderer.5$",
+            "^com.valvesoftware.steam.helper.GameOverlayRenderer.6$",
+            "^com.valvesoftware.steam.helper.GameOverlayRenderer.7$",
+            "^com.valvesoftware.steam.helper.GameOverlayRenderer.8$",
+            "^com.valvesoftware.steam.helper.GameOverlayRenderer.9$",
+            "^com.valvesoftware.steam.helper.GameOverlayRenderer.10$"
+          ]
+        }
+      ]
     }
   ]
 }
