@@ -13,7 +13,7 @@ alias o="open ."
 # open Cursor
 alias c="code ."
 # package manager auto-detection (pm)
-pm() {
+function pm {
   local dir="$PWD"
   while [ "$dir" != "/" ]; do
     [ -f "$dir/pnpm-lock.yaml" ] && { pnpm "$@"; return; }

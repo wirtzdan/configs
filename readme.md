@@ -17,8 +17,7 @@ To deploy specific configurations, run the following commands from within the do
 
 ```bash
 stow -t ~ vscode
-stow -t ~ zsh
-stow -t ~ git
+sstow -t ~ git
 ```
 
 The `-t ~` flag tells Stow to create symlinks in your home directory. 
